@@ -1,0 +1,33 @@
+cd backend
+pip install -r requirements.txt
+
+# Generate a fresh signing key for this shell session.
+$env:SECRET_KEY = python -c "import secrets; print(secrets.token_urlsafe(48))"
+$env:BOOTSTRAP_ADMIN_USERNAME = "choose-a-unique-admin-name"
+$env:BOOTSTRAP_ADMIN_EMAIL = "admin@example.com"
+$env:BOOTSTRAP_ADMIN_PASSWORD = Read-Host "Choose a strong admin password"
+# A previously seeded qbbadmin account is disabled unless you configure that username.
+
+# Add your deployed frontend origin(s), comma-separated, when not using local Vite.
+# $env:CORS_ORIGINS = "http://localhost:5173,https://portal.example.com"
+
+uvicorn main:app --reload
+
+
+qbbadmin / ChangeMe123!
+
+qbuser1
+SecurePass123!
+
+
+{
+  "username": "qbuser3",
+  "email": "worker3@watercompany.com",
+  "password": "SecurePass789!", 
+  "role": "standard"
+}
+
+
+https://prowling-frayed-fax.ngrok-free.dev -> http://localhost:8000
+
+build-and-tunnel.ps1
