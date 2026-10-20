@@ -61,7 +61,8 @@ origins = [
     "http://localhost:5173",       # Local Vite
     "http://127.0.0.1:5173",       # Local Vite Alt
     # "https://jesus-rescue-corpus-incentives.trycloudflare.com", # <--- PASTE YOUR CURRENT FRONTEND CLOUDFLARE URL HERE
-    "http://aquaflow-portal.vercel.app",
+    "https://aquaflow-portal.vercel.app",
+    "https://vercel.com/test11-3fb0/aquaflow-portal/4uKNSKJaXCJQz6XXkukdFaFUDiim",
     # Add more origins as needed, e.g.:
     # "https://your-app.vercel.app",
 ]
