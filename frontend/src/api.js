@@ -5,7 +5,7 @@ import axios from 'axios';
 // NEW (Replace with your actual ngrok URL)
 //const BASE_URL = 'https://prowling-frayed-fax.ngrok-free.dev';
 
-const BASE_URL = 'https://long-slightly-advantages-periodically.trycloudflare.com';
+const BASE_URL = 'https://aquaflow-portal.onrender.com/';
 
 const api = axios.create({
     baseURL: BASE_URL,

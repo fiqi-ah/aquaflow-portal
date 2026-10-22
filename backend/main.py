@@ -275,3 +275,11 @@ def export_approved_to_iif(admin_user: User = Depends(require_admin), db: DbDep 
             "Content-Disposition": "attachment; filename=qb_batch_import.iif"
         }
     )
+    
+# Add this to the VERY END of backend/main.py
+
+if __name__ == "__main__":
+    import uvicorn
+    # Render provides PORT env var. Default to 8000 for local dev.
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
