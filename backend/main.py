@@ -60,7 +60,9 @@ app = FastAPI(title="Water Co Billing API")
 origins = [
     "http://localhost:5173",       # Local Vite
     "http://127.0.0.1:5173",       # Local Vite Alt
-    "https://jesus-rescue-corpus-incentives.trycloudflare.com", # <--- PASTE YOUR CURRENT FRONTEND CLOUDFLARE URL HERE
+    # "https://jesus-rescue-corpus-incentives.trycloudflare.com", # <--- PASTE YOUR CURRENT FRONTEND CLOUDFLARE URL HERE
+    "https://aquaflow-portal.vercel.app",
+    "https://vercel.com/test11-3fb0/aquaflow-portal/4uKNSKJaXCJQz6XXkukdFaFUDiim",
     # Add more origins as needed, e.g.:
     # "https://your-app.vercel.app",
 ]
@@ -282,4 +284,8 @@ if __name__ == "__main__":
     import uvicorn
     # Render provides PORT env var. Default to 8000 for local dev.
     port = int(os.getenv("PORT", 8000))
+<<<<<<< HEAD
     uvicorn.run(app, host="0.0.0.0", port=port)
+=======
+    uvicorn.run(app, host="0.0.0.0", port=port)
+>>>>>>> e93c218883819df600bae91792c0b9446b83921f
